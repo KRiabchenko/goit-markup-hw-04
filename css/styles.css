@@ -186,9 +186,6 @@ align-items: center;
 .features .item + item {
     margin-left: 30px;
 }
-.features .item {
-    width: 270px;
-}
 
 .features .title {
     margin-top: 0;
@@ -216,8 +213,14 @@ align-items: center;
     padding-top: 94px;
     padding-bottom: 0;
 }
+   .features .item {
+       width: 270px;
+       margin: 10px;
+       padding: 10px;
+       border-radius: 4px;
+   }
 
-   /* .features .item::before {
+   .features .item::before {
     display: block;
     content: "";
     height: 120px;
@@ -226,12 +229,21 @@ align-items: center;
     background-position: center;
     background-color: var(--secondary-bgc-color);
 
-    outline: 1px solid red ;
-} */
+    /* outline: 1px solid red ; */
+}
 
-/* .icon-antenna {
+.icon-antenna::before {
     background-image: url(../images/antenna-icon.svg); 
-} */
+}
+.icon-diagram::before {
+    background-image: url(../images/diagram-icon.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/clock-icon.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../images/astronaut-icon.svg);
+}
 
 /* Examples */
 .examples {
@@ -268,6 +280,7 @@ align-items: center;
 }
 
 
+
 .work .title {
     margin-top: 0;
     margin-bottom: 0px;
@@ -297,6 +310,7 @@ align-items: center;
 /* Button */
 
 .button {
+    display: inline-flex;
     color: var(--primary-text-color);
     background-color: var(--primary-bgc-color);
  
@@ -306,6 +320,34 @@ align-items: center;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
+.button.link-mail::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    /* background-color: #757575; */
+    background-image: url(../images/mail-icon.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button.link-tel::before {
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/smartphone-icon.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .link-tel:hover::before,
+.link-tel:focus::before {
+     color: var(--accent-color);
+} */
 
 .button.primary {
     border-radius: 4px;
@@ -379,6 +421,22 @@ align-items: center;
     margin-bottom: 9px;
 }
 
+.social-icon {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: 1px solid red;
+}
+
+.social-icon-item {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-image: url(../images/instagram-icon.svg);
+    cursor: pointer;
+}
 
 /* Page Portfolio */
 
