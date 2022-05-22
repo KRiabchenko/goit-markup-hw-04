@@ -279,8 +279,6 @@ align-items: center;
     padding-bottom: 30px;
 }
 
-
-
 .work .title {
     margin-top: 0;
     margin-bottom: 0px;
@@ -305,6 +303,44 @@ align-items: center;
 
 .team {
     background-color: var(--secondary-bgc-color);
+}
+
+/* ----------Постоянные клиенты---------- */
+
+.clients-title {
+    margin: 0;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--title-text-color);
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    margin: 16px 32px;
+    background-size: contain;
+}
+
+.clients-item + .clients-item {
+    margin-left: 30px;
 }
 
 /* Button */
@@ -344,10 +380,6 @@ align-items: center;
     background-repeat: no-repeat;
 }
 
-/* .link-tel:hover::before,
-.link-tel:focus::before {
-     color: var(--accent-color);
-} */
 
 .button.primary {
     border-radius: 4px;
@@ -420,23 +452,48 @@ align-items: center;
 .footer-nav-mail {
     margin-bottom: 9px;
 }
-
-.social-icon {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    outline: 1px solid red;
-}
-
-.social-icon-item {
+/* -------------Social Links----------- */
+.social {
     display: block;
-    width: 44px;
-    height: 44px;
+    justify-content: center;
+    width: 206px;
+    height: 80px;
+    margin: 0;
     padding: 0;
-    background-image: url(../images/instagram-icon.svg);
-    cursor: pointer;
+
+    outline: 1px solid red;
+
 }
+
+.social-title {
+    margin:0;
+    padding-bottom: 20px;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--white-color);
+}
+
+.social-list {
+    display: flex;
+    width: 206px;
+    margin: 0;
+}
+
+.social-item + .social-item {
+    margin-left: 10px;
+}
+
+
+
+
+
+
 
 /* Page Portfolio */
 
