@@ -131,6 +131,18 @@ align-items: center;
     text-decoration: none;
 }
 
+.icon-link {
+    display: block;
+    background-size: cover;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-link:hover{
+    color: #2196F3;
+}
+
+
 /* Contacts */
 .contacts {
     display: flex;
@@ -220,7 +232,19 @@ align-items: center;
        border-radius: 4px;
    }
 
-   .features .item::before {
+.feateres-icon {
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+   }
+
+   /* .features .item::before {
     display: block;
     content: "";
     height: 120px;
@@ -228,8 +252,6 @@ align-items: center;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--secondary-bgc-color);
-
-    /* outline: 1px solid red ; */
 }
 
 .icon-antenna::before {
@@ -243,7 +265,7 @@ align-items: center;
 }
 .icon-astronaut::before {
     background-image: url(../images/astronaut-icon.svg);
-}
+}  */
 
 /* Examples */
 .examples {
@@ -305,6 +327,33 @@ align-items: center;
     background-color: var(--secondary-bgc-color);
 }
 
+.command-social-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.command-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: #AFB1B8;
+}  
+
+.command-social-item + .command-social-item {
+    margin-left: 10px;
+}
+
+.command-social-link:hover {
+    fill: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+
+
 /* ----------Постоянные клиенты---------- */
 
 .clients-title {
@@ -333,15 +382,26 @@ align-items: center;
 }
 
 .clients-icon {
+    display: block;
     width: 106px;
     height: 60px;
     margin: 16px 32px;
     background-size: contain;
+    fill: #AFB1B8;
+}
+
+.clients-icon:hover {
+    fill: #2196F3;
+}
+
+.clients-item:hover {
+    border-color: var(--accent-color);
 }
 
 .clients-item + .clients-item {
     margin-left: 30px;
 }
+
 
 /* Button */
 
@@ -357,12 +417,11 @@ align-items: center;
     text-decoration: none;
 }
 
-.button.link-mail::before {
+/* .button.link-mail::before {
     content: "";
     width: 16px;
     height: 12px;
-    margin-right: 10px;
-    /* background-color: #757575; */
+    margin-right: 10px; 
     background-image: url(../images/mail-icon.svg);
     background-size: contain;
     background-position: center;
@@ -378,7 +437,7 @@ align-items: center;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 
 .button.primary {
@@ -410,6 +469,7 @@ align-items: center;
 /* Footer */
 
 .footer {
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--hero-bgc-color);
@@ -452,21 +512,27 @@ align-items: center;
 .footer-nav-mail {
     margin-bottom: 9px;
 }
+
+.footer-container {
+    display: flex;
+}
+
+.footer-contacts {
+    display: block;
+    
+}
 /* -------------Social Links----------- */
 .social {
-    display: block;
-    justify-content: center;
+    display: inline-block;
+    
     width: 206px;
-    height: 80px;
-    margin: 0;
-    padding: 0;
-
-    outline: 1px solid red;
-
+    height: 80px;   
+    margin-left: 70px;
 }
 
 .social-title {
     margin:0;
+    padding-top: 10px;
     padding-bottom: 20px;
     justify-content: center;
 
@@ -489,10 +555,20 @@ align-items: center;
     margin-left: 10px;
 }
 
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
-
-
-
+.social-link:hover {
+    background-color: var(--accent-color);
+}
 
 
 /* Page Portfolio */
@@ -535,6 +611,13 @@ align-items: center;
     margin-bottom: 30px;
 
     border: 1px solid #EEEEEE;
+}
+
+.foto-elements:hover {
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .foto-elements:nth-child(3n) {
