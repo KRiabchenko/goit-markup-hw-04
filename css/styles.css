@@ -131,17 +131,11 @@ align-items: center;
     text-decoration: none;
 }
 
-.icon-link {
-    display: block;
-    background-size: cover;
+.contacts-icon {
+    display: blok;
     margin-right: 10px;
     fill: currentColor;
 }
-
-.icon-link:hover{
-    color: #2196F3;
-}
-
 
 /* Contacts */
 .contacts {
@@ -462,6 +456,7 @@ align-items: center;
 
 .button.link:hover,
 .button.link:focus {
+    display: flex;
     color: var(--accent-color);
 }
 
